@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS test;
+CREATE TABLE test (
+    id int NOT NULL AUTO_INCREMENT,
+    text VARCHAR(512),
+    PRIMARY KEY (id)
+);
+
+

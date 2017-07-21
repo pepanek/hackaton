@@ -1,0 +1,15 @@
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+    <!-- Fallback: if logAppender not defined then use CONSOLE appender -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{dd-MM-yy HH:mm:ss.SSS} %-5level [%thread] %X{x-tm-unique-id} %logger{36}%replace( %X{log-keyword} ){' ',' '}- %msg%nopex%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+    <logger name="org.hibernate.SQL" level="debug" />
+</configuration>

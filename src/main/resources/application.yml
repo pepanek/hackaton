@@ -1,0 +1,15 @@
+#spring:
+#  datasource:
+#    url: "jdbc:mysql://localhost:3306/cornholio"
+#    username: "cornholio"
+#    password: "cornholio"
+#    platform: "mysql"
+#    continue-on-error: true
+
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/hackaton"
+    username: "hackaton"
+    password: "hackaton"
+    platform: "mysql"
+    continue-on-error: true
